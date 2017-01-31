@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="site.css">
+	<meta charset="UTF-8">
+	<title>FAQs</title>
+</head>
+<body>
+	<div class="container">
+		<div class="panel">
+			<div class="panel-heading" data-toggle="1"> 
+				<h4 class="panel-title" data-toggle="1"><a data-toggle="1" href="#">Why are these 8x10 prints so cheap?</a></h4> 
+			</div>
+			<div class="panel-body hidden-element" data-body="1"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
+			</div>
+		</div>
+		<div class="panel">
+			<div class="panel-heading" data-toggle="2">
+				<h4 class="panel-title" data-toggle="2"><a data-toggle="2" href="#">second one?</a></h4> 
+			</div> 
+			<div class="panel-body hidden-element" data-body="2"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
+			</div>
+		</div> 
+		<div class="panel">
+			<div class="panel-heading" data-toggle="3">
+				<h4 class="panel-title" data-toggle="3"><a data-toggle="3" href="#">second one?</a></h4> 
+			</div>
+			<div class="panel-body hidden-element" data-body="3"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
+			</div>
+		</div> 
+		<div class="panel">
+			<div class="panel-heading" data-toggle="4">
+				<h4 class="panel-title" data-toggle="4"><a data-toggle="4" href="#">second one?</a></h4> 
+			</div>
+			<div class="panel-body hidden-element" data-body="4"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
+			</div>
+		</div>
+	</div>
+
+<script>
+	const panelHeading = document.querySelectorAll('.panel-heading');
+	const panelBody = document.querySelectorAll('.panel-body');
+	//loop thru headings to build event listeners
+	for (var i = 0, len = panelHeading.length; i < len; i++) {
+
+		panelHeading[i].addEventListener('click', function(e) {
+			//set a variable for the heading that matched the one clicked
+			const selectedDiv = document.querySelector('[data-body="' + e.target.dataset.toggle + '"]');
+			//for each heading also loop thru all bodies
+			for (var i = 0, len = panelBody.length; i < len; i++) {
+				//if the body does not belong to the heading that was clicked then close it and remove hover style on heading
+				if (panelBody[i].dataset.body != e.target.dataset.toggle) {
+
+					panelBody[i].style.height = 0;
+					panelHeading[i].className = 'panel-heading';
+				}
+			}
+			//change the height of the body of the clicked heading to collapse or expand it
+			if (selectedDiv.clientHeight) {
+				selectedDiv.style.height = 0;
+			} else {
+				selectedDiv.style.height = selectedDiv.scrollHeight + "px";
+			}
+			//toggle the hover class on the clicked heading
+			document.querySelector('[data-toggle="' + e.target.dataset.toggle + '"]').classList.toggle('panel-heading-hover');
+
+		})
+	};
+</script>
+</body>
+</html>

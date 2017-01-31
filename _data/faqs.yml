@@ -1,0 +1,8 @@
+- title: What is this?
+  body: <p>a collapsible div</p>
+
+- title: Does it have any dependencies?  
+  body: <p>Nope</p>
+
+- title: Is it complicated?
+  body: <p>Well, not really, but you do have to follow a few rules.</p>  
