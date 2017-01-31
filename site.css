@@ -15,7 +15,28 @@ body {margin:0;}
 	cursor: pointer;
 }
 .panel-heading a{text-decoration: none;color:white;vertical-align: bottom;}
-.panel-heading:hover, .panel-heading-hover{background-color: #3d78d8;border: 1px solid #3d78d8;}
+.panel-heading a:after {
+    content: "+";
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    top: 50%;
+    line-height: 1;
+    margin-top: -7px;
+}
+
+.panel-heading:hover, .panel-heading-hover {background-color: #3d78d8;border: 1px solid #3d78d8;}
+.panel-heading-hover a:after {
+    content: "-";
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    top: 50%;
+    line-height: 1;
+    margin-top: -7px;
+}
 .panel-heading-question{
 	    vertical-align: middle;
     padding-right: 10px;
