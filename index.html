@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,34 +9,18 @@
 </head>
 <body>
 	<div class="container">
-		<div class="panel">
-			<div class="panel-heading" data-toggle="1"> 
-				<h4 class="panel-title" data-toggle="1"><a data-toggle="1" href="#">Why are these 8x10 prints so cheap?</a></h4> 
+		
+		{% for item in site.data.faqs %}
+			<div class="panel">
+			<div class="panel-heading" data-toggle="{{forloop.index}}"> 
+				<h4 class="panel-title" data-toggle="{{forloop.index}}"><a data-toggle="{{forloop.index}}" href="#">{{item.title}}</a></h4> 
 			</div>
-			<div class="panel-body hidden-element" data-body="1"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-heading" data-toggle="2">
-				<h4 class="panel-title" data-toggle="2"><a data-toggle="2" href="#">second one?</a></h4> 
-			</div> 
-			<div class="panel-body hidden-element" data-body="2"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
-			</div>
-		</div> 
-		<div class="panel">
-			<div class="panel-heading" data-toggle="3">
-				<h4 class="panel-title" data-toggle="3"><a data-toggle="3" href="#">second one?</a></h4> 
-			</div>
-			<div class="panel-body hidden-element" data-body="3"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
-			</div>
-		</div> 
-		<div class="panel">
-			<div class="panel-heading" data-toggle="4">
-				<h4 class="panel-title" data-toggle="4"><a data-toggle="4" href="#">second one?</a></h4> 
-			</div>
-			<div class="panel-body hidden-element" data-body="4"> <p>By focusing on one print size (8x10) we can standardize everything we do to make it as efficient as possible, and then offer the best price possible.</p> <p>While the price of our 8x10s is very cheap - and our intention is to have the best price for 8x10 prints, they are still very high quality - printed on Fuji Crystal Archive photo paper.</p> 
+			<div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
+			{{item.body}} 
 			</div>
 		</div>
+
+		{% endfor %}
 	</div>
 
 <script>
