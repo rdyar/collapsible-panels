@@ -4,24 +4,27 @@ body {margin:0;}
 .panel {
 	margin-bottom:4px;
 }
-.panel-title{margin:10px 0;}
+/*.panel-title{margin:10px 0;}*/
 .panel-heading {
-	font-weight: 400;
-	padding:0 1rem;
+	padding:10px;
 	display: inline-block;
 	width: 100%;
 	background-color: #999;
 	border: 1px solid #999;
 	position: relative;
-	cursor: pointer
+	cursor: pointer;
 }
-.panel-heading a{text-decoration: none;color:white;}
+.panel-heading a{text-decoration: none;color:white;vertical-align: bottom;}
 .panel-heading:hover, .panel-heading-hover{background-color: #3d78d8;border: 1px solid #3d78d8;}
+.panel-heading-question{
+	    vertical-align: middle;
+    padding-right: 10px;
+}
 .panel-body{
 	border: 1px solid #f0f0f0;
 	border-top: 0;
 	background:#fafafa;
-	padding: 0 1rem;
+	padding: 0 10px;
 	width: 100%;
 }
 

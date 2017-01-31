@@ -12,8 +12,8 @@
 		
 		{% for item in site.data.faqs %}
 			<div class="panel">
-			<div class="panel-heading" data-toggle="{{forloop.index}}"> 
-				<h4 class="panel-title" data-toggle="{{forloop.index}}"><a data-toggle="{{forloop.index}}" href="#">{{item.title}}</a></h4> 
+			<div class="panel-heading" data-toggle="{{forloop.index}}"> 	
+			<img class="panel-heading-question" data-toggle="{{forloop.index}}" src="questionmark.png"><a data-toggle="{{forloop.index}}" href="#">{{item.title}}</a>
 			</div>
 			<div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
 			{{item.body}} 
@@ -21,6 +21,8 @@
 		</div>
 
 		{% endfor %}
+		<h1>More Cool Stuff Here</h1>
+		<p>very cool.</p>
 	</div>
 
 <script>
