@@ -41,7 +41,7 @@ Also when you click on a given heading, the code goes thru all other bodies and 
 {% endraw %}
 ```
 
-You can see all the CSS and Javascript in the repo here: https://github.com/rdyar/collapsible-panels		
+You can see all the CSS and Javascript in the repo here: [https://github.com/rdyar/collapsible-panels](https://github.com/rdyar/collapsible-panels)
 
 <script>
 	const panelHeading = document.querySelectorAll('.panel-heading');
