@@ -58,3 +58,4 @@ body {margin:0;}
 	height: 0;
 	overflow: hidden;
 }
+.highlight {overflow: auto; background-color: #efefef;}
