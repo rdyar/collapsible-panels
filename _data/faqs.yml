@@ -5,5 +5,10 @@
   body: <p>Nope</p>
 
 - title: Is it complicated?
-  body: <p>Well, not really, but you do have to follow a few rules. loreme e errwsdf ssvczxcv xcvxvxbcvbdf bdfbd fbdfbdf bdrbe bervber b</p>  
-        <p>Well, not really, but you do have to follow a few rules. loreme e errwsdf ssvczxcv xcvxvxbcvbdf bdfbd fbdfbdf bdrbe bervber b</p> 
+  body: <p>Well, not really, but you do have to follow a few rules. It works best if you use jekyll and a data file to loop thru and build the proper strucure.</p>  
+
+- title: Do I have to use it with Jekyll?
+  body: <p>Nope, it just makes it easier to have the correct toggle/body index numbers.
+
+- title: You made it so it is perfect and works under all use cases right?
+  body: <p>Well, no. It works great as a simple expandable FAQ, but I have not tried to use it for anything else. For example, if you stick a large image in one of the bodies it may not work properly.</p>
