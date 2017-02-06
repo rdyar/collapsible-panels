@@ -6,7 +6,7 @@ layout: default
 {% for item in site.data.faqs %}
 <div class="panel">
 <div class="panel-heading" data-toggle="{{forloop.index}}"> 	
-<img class="panel-heading-question" data-toggle="{{forloop.index}}" src="questionmark.png"><a data-toggle="{{forloop.index}}" href="javascript:void(0)">{{item.title}}</a>
+<img alt="" class="panel-heading-question" data-toggle="{{forloop.index}}" src="questionmark.png"><a data-toggle="{{forloop.index}}" href="javascript:void(0)">{{item.title}}</a>
 </div>
 <div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
 {{item.body}} 
@@ -30,7 +30,7 @@ Also when you click on a given heading, the code goes thru all other bodies and 
 	{% for item in site.data.faqs %}
 	<div class="panel">
 		<div class="panel-heading" data-toggle="{{forloop.index}}"> 	
-			<img class="panel-heading-question" data-toggle="{{forloop.index}}" src="questionmark.png">  
+			<img alt="" class="panel-heading-question" data-toggle="{{forloop.index}}" src="questionmark.png">  
 			<a href="javascript:void(0)" data-toggle="{{forloop.index}}" href="#">{{item.title}}</a>
 		</div>
 		<div class="panel-body hidden-element" data-body="{{forloop.index}}"> 
